@@ -6,9 +6,8 @@ interface ButtonProps {
 }
 
 export function Button(props:ButtonProps){
-
     return (
-        <button className='btn btn-primary' onClick={props.onClick}>
+        <button className='btn btn-outline' onClick={props.onClick}>
             {props.children}
         </button>
     )
