@@ -5,9 +5,17 @@ interface ButtonProps {
     children?:Element;
 }
 
-export function Button(props:ButtonProps){
+export default function Button(props:ButtonProps){
+
+    function onClick(){
+        //code to click the button
+        console.log('Button was clicked');
+        //forward onto the props onClick function
+        props.onClick();
+    }
+
     return (
-        <button className='btn btn-outline' onClick={props.onClick}>
+        <button className='btn btn-outline' onClick={onClick}>
             {props.children}
         </button>
     )

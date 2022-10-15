@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "../components/react/Button";
+import Button from "../components/react/Button";
 import { signal, useSignal } from "@preact/signals-react";
 import axios from "axios";
 
@@ -138,7 +138,7 @@ function ApiCallExample(){
 
 const countRenderStore = new CountRenderStore();
 
-export function App() {
+export default function App() {
   return (
     <div
       className="w-full h-full p-4 absolute top-0 left-0 overflow-y-auto"
