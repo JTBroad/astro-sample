@@ -15,6 +15,8 @@ export function ComponentWithPreactSignalsState(props: ComponentSampleProps) {
 
     return (
         <div>
+            <div>---------</div>
+            <div>Preact Signals in React Example</div>
             <div className="text-4xl">{props.text}</div>
             <div className="py-4 text-3xl">
                 Local: {count.value} - Global: {globalCount.value}
@@ -27,6 +29,7 @@ export function ComponentWithPreactSignalsState(props: ComponentSampleProps) {
             >
                 Click Here To Increment The Count
             </Button>
+            <div>---------</div>
         </div>
     );
 }

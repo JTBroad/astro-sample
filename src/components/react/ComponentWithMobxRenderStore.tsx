@@ -1,22 +1,27 @@
 import React from 'react';
-import { signal } from "@preact/signals-react";
+import { makeAutoObservable } from 'mobx';
+import { observer } from 'mobx-react';
 import Button from './Button';
 
-export class ComponentWithSignalsRenderStore {
-    count = signal(0);
+export class ComponentWithMobxRenderStore {
+    count:number = 0;
+
+    constructor(){
+        makeAutoObservable(this);
+    }
 
     increment = () => {
-        this.count.value = this.count.value + 1;
+        this.count++;
     };
 
-    render = (props: { text: string }) => {
+    render = observer((props: { text: string }) => {
 
         return (
             <div>
                 <div>---------</div>
-                <div>RenderStore pattern with preact signals example</div>
+                <div>RenderStore pattern with Mobx Example</div>
                 <div className="text-4xl">{props.text}</div>
-                <div className="py-4 text-3xl">{this.count.value}</div>
+                <div className="py-4 text-3xl">{this.count}</div>
                 <Button
                     onClick={() => {
                         this.increment();
@@ -24,7 +29,8 @@ export class ComponentWithSignalsRenderStore {
                 >
                     Click Here To Increment The Count
                 </Button>
+                <div>---------</div>
             </div>
         );
-    };
+    });
 }

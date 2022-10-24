@@ -24,6 +24,8 @@ export function ApiCallExample() {
 	if (!loading && apiResult?.species?.name) {
 		content = (
 			<div>
+				<div>---------</div>
+				<div>Api Example</div>
 				done loading {apiResult.species.name}
 				<br />
 				<br />
@@ -33,6 +35,7 @@ export function ApiCallExample() {
 						{JSON.stringify(apiResult, null, ' ')}
 					</code>
 				</pre>
+				<div>---------</div>
 			</div>
 		)
 	}

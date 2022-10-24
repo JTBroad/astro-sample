@@ -12,6 +12,8 @@ export function ComponentWithLocalState(props:ComponentSampleProps) {
 
     return (
         <div>
+            <div>---------</div>
+            <div>React Local State Example</div>
             <div className="text-4xl">{props.text}</div>
             <div className="py-4 text-3xl">{count}</div>
             <Button
@@ -21,6 +23,7 @@ export function ComponentWithLocalState(props:ComponentSampleProps) {
             >
                 Click Here To Increment The Count
             </Button>
+			<div>---------</div>
         </div>
     );
 }
