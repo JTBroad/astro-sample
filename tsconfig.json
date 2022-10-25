@@ -2,6 +2,10 @@
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "exclude": "tsconfig.json",
-    "jsx": "react"
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths":{
+      "@src/*": ["src/*"]
+    }
   }
 }
