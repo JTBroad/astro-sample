@@ -9,7 +9,7 @@ import { ApiCallExample } from "../components/react/ApiCallExample";
 const countStoreOne = new ComponentWithSignalsRenderStore();
 const countStoreMobx = new ComponentWithMobxRenderStore();
 
-export default function App() {
+export default function AppIsland() {
 
 	let [countStoreTwo] = useState(new ComponentWithSignalsRenderStore());
 
