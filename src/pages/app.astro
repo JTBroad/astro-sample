@@ -1,11 +1,11 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import AppIsland from '@src/islands/AppIsland';
+import Base from '../layouts/Base.astro';
+import AppIsland from '~/islands/AppIsland';
 ---
 
-<Layout title="App Example">
+<Base title="App Example">
 	<AppIsland client:idle />
-</Layout>
+</Base>
 
 <style>
 	
