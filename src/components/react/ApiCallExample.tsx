@@ -7,7 +7,7 @@ export function ApiCallExample() {
 	const [apiResult, setApiResult] = useState(null);
 
 	useEffect(() => {
-		setLoading(false);
+		setLoading(true);
 		axios.get('https://pokeapi.co/api/v2/pokemon/ditto').then((result) => {
 			console.log(result);
 			const data = result.data;
