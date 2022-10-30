@@ -1,6 +1,7 @@
 # Welcome to [Astro](https://astro.build)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/~/github.com/JTBroad/astro-sample)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/JTBroad/astro-sample?file=README.md)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_codeflow.svg)](https://stackblitz.com/~/github.com/JTBroad/astro-sample)
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
