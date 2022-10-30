@@ -4,6 +4,6 @@
  * @param key search term to find in the object
  * @returns boolean
  */
-export function (object, key:string):boolean {
+export function ObjectHasKey(object:unknown, key:string):boolean {
     return !!(object && Object.keys(object).findIndex((k)=>k===key) > -1);
 }
