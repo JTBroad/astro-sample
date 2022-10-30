@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { ComponentWithLocalState } from "../components/react/ComponentWithLocalState";
-import { ComponentWithPreactSignalsState } from "../components/react/ComponentWithPreactSignalsState";
-import { ComponentWithSignalsRenderStore } from "../components/react/ComponentWithSignalsRenderStore";
-import { ComponentWithMobxState } from "../components/react/ComponentWithMobxState";
-import { ComponentWithMobxRenderStore } from "../components/react/ComponentWithMobxRenderStore";
-import { ApiCallExample } from "../components/react/ApiCallExample";
+import React, { useState } from "react";
+import { ComponentWithLocalState } from "~/components/react/ComponentWithLocalState";
+import { ComponentWithPreactSignalsState } from "~/components/react/ComponentWithPreactSignalsState";
+import { ComponentWithSignalsRenderStore } from "~/components/react/ComponentWithSignalsRenderStore";
+import { ComponentWithMobxState } from "~/components/react/ComponentWithMobxState";
+import { ComponentWithMobxRenderStore } from "~/components/react/ComponentWithMobxRenderStore";
+import { ApiCallExample } from "~/components/react/ApiCallExample";
 
 const countStoreOne = new ComponentWithSignalsRenderStore();
 const countStoreMobx = new ComponentWithMobxRenderStore();
