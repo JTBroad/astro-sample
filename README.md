@@ -8,6 +8,7 @@
 
 This project aims to be a base astro site example to demonstrate a starting off point for using astro and react. Examples of different methods of state management are included.
 
+This main branch builds as a static stie. Check out the ssr branch if you want to see a version served up as a active running server that can make api call definitions and generates pages on the fly.
 
 ## 🚀 Project Structure
 
