@@ -3,9 +3,10 @@
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/JTBroad/astro-sample?file=README.md)
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_codeflow.svg)](https://stackblitz.com/~/github.com/JTBroad/astro-sample)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+## Summary
+
+This project aims to be a base astro site example to demonstrate a starting off point for using astro and react. Examples of different methods of state management are included.
 
 
 ## 🚀 Project Structure
@@ -19,10 +20,19 @@ Inside of your Astro project, you'll see the following folders and files:
 ├── src/
 │   ├── components/
 │   │   └── Card.astro
+│   │   └── react
+│   │       └── ...
 │   ├── layouts/
 │   │   └── Layout.astro
+│   ├── models/
+│   │   └── (Data structure types)
 │   └── pages/
-│       └── index.astro
+│   │   └── app/
+│   │       └── AppIsland.tsx
+│   │       └── index.astro
+│   │   └── index.astro
+│   └── utils/
+│       └── (Helper code thats more general)
 └── package.json
 ```
 
