@@ -11,7 +11,8 @@ import node from "@astrojs/node";
 export default defineConfig({
   integrations: [windicss(), react()],
   output: "server",
-  adapter: node({
+  server: (command) => ({ port: command === 'dev' ? 3000 : 80 }),
+  adapter: node({ 
     mode:'standalone'
   })
 });
