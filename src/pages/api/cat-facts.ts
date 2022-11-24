@@ -1,19 +1,18 @@
 
-export const Bob = 2;
+// export const Bob = 2;
 
-// export async function get({ params }) {
+export async function get({ params }) {
 
-//     const response = await fetch("https://catfact.ninja/fact");
-//     const data = await response.json();
+    const response = await fetch("https://catfact.ninja/fact");
+    const data = await response.json();
 
-//     return { bob: 'steve' }
-//     // return new Response(JSON.stringify({
-//     //     CATFACT:data.fact
-//     // }), 
-//     // {
-//     //     status:200,
-//     //     headers: {
-//     //         "Content-Type": "application/json"
-//     //     }
-//     // })
-// }
+    return new Response(JSON.stringify({
+        CATFACT:data.fact
+    }), 
+    {
+        status:200,
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+}
