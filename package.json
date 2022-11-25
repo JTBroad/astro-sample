@@ -7,8 +7,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "buildStatic": "astro build --config astro-static.config.mjs",
-    "buildHybrid":"npm run build && npm run buildStatic",
+    "buildStaticOverrideHack": "astro build --config _hybrid_hack/astro-static.config.mjs",
+    "buildHybrid":"npm run build && npm run buildStaticOverrideHack",
     "preview": "astro preview",
     "astro": "astro",
     "serve": "node ./dist/server/entry.mjs"
