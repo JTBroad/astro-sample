@@ -11,9 +11,11 @@ export function HybridBuild(staticPaths) {
 			'astro:build:setup': async (options) => {
 				if (!options.vite.build.ssr && _staticBuild) {
 					for (let key of options.pages.keys()) {
-						if (staticPaths.indexOf(key) === -1) {
-							options.pages.delete(key);
-						}
+						staticPaths.forEach((path) => {
+							if (key.indexOf(path) === -1) {
+								options.pages.delete(key);
+							}
+						});
 					}
 				}
 			},
