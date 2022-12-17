@@ -1,6 +1,8 @@
 ---
+export const prerender = true;
 import Base from '~/layouts/Base.astro';
 import AppIsland from './AppIsland';
+console.log('if this is server rendered this will be in the terminal')
 ---
 
 <Base title="App Example">
@@ -11,4 +13,3 @@ import AppIsland from './AppIsland';
 	
 </style>
 
-<script async defer data-website-id="aaf5a1df-cb34-4772-ac8f-bc8d4f210f14" src="https://sample-umami.jtownblast.com/umami.js"></script>

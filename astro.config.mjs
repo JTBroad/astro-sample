@@ -11,8 +11,11 @@ import node from "@astrojs/node";
 export default defineConfig({
   integrations: [windicss(), react()],
   output: "server",
-  server: (command) => ({ port: command === 'dev' ? 3000 : 80, host: command === 'dev' ? false : '0.0.0.0' }),
+  server: (command) => ({ port: command === 'dev' ? 3000 : 3000, host: command === 'dev' ? false : false }),
   adapter: node({ 
     mode:'standalone'
-  })
+  }),
+  experimental:{
+    prerender:true
+  }
 });

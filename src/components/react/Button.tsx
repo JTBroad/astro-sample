@@ -2,7 +2,7 @@ import React from 'react';
 
 interface ButtonProps {
     onClick:()=>void;
-    children?:Element;
+    children?:JSX.Element | JSX.Element[] | string;
 }
 
 export default function Button(props:ButtonProps){

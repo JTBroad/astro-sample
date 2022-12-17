@@ -12,14 +12,14 @@
     "serve": "node ./dist/server/entry.mjs"
   },
   "dependencies": {
-    "@astrojs/node": "^2.0.2",
-    "@astrojs/react": "^1.2.1",
+    "@astrojs/node": "^4.0.0",
+    "@astrojs/react": "^1.2.2",
     "@preact/signals-react": "^1.2.1",
-    "astro": "^1.5.3",
-    "axios": "^1.1.2",
-    "daisyui": "^2.33.0",
-    "mobx": "^6.6.2",
-    "mobx-react": "^7.5.3",
+    "astro": "^1.7.1",
+    "axios": "^1.2.1",
+    "daisyui": "^2.45.0",
+    "mobx": "^6.7.0",
+    "mobx-react": "^7.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

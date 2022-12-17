@@ -9,15 +9,31 @@ import { ApiCallExample } from "~/components/react/ApiCallExample";
 const countStoreOne = new ComponentWithSignalsRenderStore();
 const countStoreMobx = new ComponentWithMobxRenderStore();
 
+function RS(props:any){
+	const [rs, setRs] = useState(new props.t());
+	return <rs.render/>
+}
+
 export default function AppIsland() {
 
 	let [countStoreTwo] = useState(new ComponentWithSignalsRenderStore());
+
+	const [count, setCount] = useState(0);
 
 	return (
 		<div
 			className="w-full h-full p-4 absolute top-0 left-0 overflow-y-auto"
 			data-theme="business"
+			key={count.toString()}
 		>
+			<button onClick={()=>{setCount(count+1)}}>click me</button>
+
+			<RS t={ComponentWithMobxRenderStore} />
+<br />
+<br />
+<br />
+
+
 			<ComponentWithLocalState
 				initialCount={5}
 				text="Hello there General Kenobi."
